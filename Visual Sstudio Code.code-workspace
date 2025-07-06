@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "D:/Visual Sstudio Code"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Programs",
+		"java.debug.settings.onBuildFailureProceed": true
+	}
+}

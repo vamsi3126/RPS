@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            GAME-RPS
+        </title>
+        <link rel="stylesheet" href="game.css">
+    </head>
+    <body>
+        <h1 onclick="changeTitle('Rock Papers And Scissors game')">Rock Papers And Scissors game </h1>
+
+        <div>
+            <button class="rock" onclick="
+                playGame('rock')
+            "><img src="pictures/rock-emoji.png"></button>
+
+            <button class="papers" onclick="
+                playGame('paper')
+            "><img src="pictures/paper-emoji.png"></button>
+            
+            <button class="scissors" onclick="
+                playGame('scissors')
+            "><img src="pictures/scissors-emoji.png"></button>
+
+            <button class="reset" onclick="
+                score.wins=0
+                score.ties=0
+                score.losses=0
+                localStorage.removeItem('score')
+                displayScore();
+                document.querySelector('.outcomes').innerText=``;
+                    
+            ">Reset Score</button>
+            
+        </div>
+        
+        <p class="outcomes1"></p>
+        <p class="outcomes2"></p>
+        <p class="scores"></p>
+        
+        <script src="game.js">
+            
+        </script>
+    </body>
+</html>
