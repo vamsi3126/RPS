@@ -23,38 +23,38 @@ function playGame(playerMove){
         
         if(Move==='rock'){
             result='You Tie';
-            document.querySelector(".outcomes2").innerHTML=`You <img src="pictures/rock-emoji.png"> <img src="pictures/rock-emoji.png"> Computer`;
+            document.querySelector(".outcomes2").innerHTML=`You <img src="rock-emoji.png"> <img src="pictures/rock-emoji.png"> Computer`;
         }else if(Move==='paper'){
             result='You Lose';
-            document.querySelector(".outcomes2").innerHTML=`You <img src="pictures/rock-emoji.png"> <img src="pictures/paper-emoji.png"> Computer`;
+            document.querySelector(".outcomes2").innerHTML=`You <img src="rock-emoji.png"> <img src="pictures/paper-emoji.png"> Computer`;
         }else if(Move==='scissors'){
             result='You Win';
-            document.querySelector(".outcomes2").innerHTML=`You <img src="pictures/rock-emoji.png"> <img src="pictures/scissors-emoji.png"> Computer`;
+            document.querySelector(".outcomes2").innerHTML=`You <img src="rock-emoji.png"> <img src="pictures/scissors-emoji.png"> Computer`;
         }
         
     }
     else if(playerMove==='paper'){
         if(Move==='rock'){
             result='You Win';
-            document.querySelector(".outcomes2").innerHTML=`You <img src="pictures/paper-emoji.png"> <img src="pictures/rock-emoji.png"> Computer`;
+            document.querySelector(".outcomes2").innerHTML=`You <img src="paper-emoji.png"> <img src="pictures/rock-emoji.png"> Computer`;
         }else if(Move==='paper'){
             result='You Tie';
-            document.querySelector(".outcomes2").innerHTML=`You <img src="pictures/paper-emoji.png"> <img src="pictures/paper-emoji.png"> Computer`;
+            document.querySelector(".outcomes2").innerHTML=`You <img src="paper-emoji.png"> <img src="pictures/paper-emoji.png"> Computer`;
         }else if(Move==='scissors'){
             result='You Lose';
-            document.querySelector(".outcomes2").innerHTML=`You <img src="pictures/paper-emoji.png"> <img src="pictures/scissors-emoji.png"> Computer`;
+            document.querySelector(".outcomes2").innerHTML=`You <img src="paper-emoji.png"> <img src="pictures/scissors-emoji.png"> Computer`;
         }
     }
     else if(playerMove==='scissors'){
         if(Move==='rock'){
             result='You Lose';
-            document.querySelector(".outcomes2").innerHTML=`You <img src="pictures/scissors-emoji.png"> <img src="pictures/rock-emoji.png"> Computer`;
+            document.querySelector(".outcomes2").innerHTML=`You <img src="scissors-emoji.png"> <img src="pictures/rock-emoji.png"> Computer`;
         }else if(Move==='paper'){
             result='You Win';
-            document.querySelector(".outcomes2").innerHTML=`You <img src="pictures/scissors-emoji.png"> <img src="pictures/paper-emoji.png"> Computer`;
+            document.querySelector(".outcomes2").innerHTML=`You <img src="scissors-emoji.png"> <img src="pictures/paper-emoji.png"> Computer`;
         }else if(Move==='scissors'){
             result='You Tie';
-            document.querySelector(".outcomes2").innerHTML=`You <img src="pictures/scissors-emoji.png"> <img src="pictures/scissors-emoji.png"> Computer`;
+            document.querySelector(".outcomes2").innerHTML=`You <img src="scissors-emoji.png"> <img src="pictures/scissors-emoji.png"> Computer`;
         }
     }
 
@@ -92,4 +92,5 @@ function displayScore(){
 }
 function changeTitle(name){
     document.querySelector('h1').innerText=`${name} - by Vamsi..`
+
 }
